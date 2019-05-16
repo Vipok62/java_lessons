@@ -23,7 +23,7 @@ public class Calculate {
                     break;
                 case '-':
                     yy.y = qwe.a - qwer.b;
-                    System.out.println("Ответ: " + yy.y);
+                    System.out.println("Ответ: "+ yy.y);
                     break;
                 case '*':
                     yy.y = qwe.a * qwer.b;
@@ -40,7 +40,7 @@ public class Calculate {
 }
 
 class Args {
-    double a ;
+    double a;
     double b;
     char q;
     double y;
