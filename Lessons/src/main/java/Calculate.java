@@ -4,9 +4,9 @@ public class Calculate {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Args yy = new Args();
-        do {
+        do{
             System.out.println("Калькулятор v2. ");
-            System.out.println("Введите переменную a: ");
+            System.out.println("Введите переменную а: ");
             Args qwe = new Args();
             qwe.a = scanner.nextInt();
             System.out.println("Введите переменную b: ");
@@ -15,23 +15,22 @@ public class Calculate {
             System.out.println("Введите знак: ");
             Args qq = new Args();
             qq.q = scanner.next().charAt(0);
-
             switch (qq.q) {
                 case '+':
                     yy.y = qwe.a + qwer.b;
-                    System.out.println("Ответ: " + yy.y);
+                    System.out.println("Ответ: " + String.valueOf(yy.y).replaceAll("\\.0",""));
                     break;
                 case '-':
                     yy.y = qwe.a - qwer.b;
-                    System.out.println("Ответ: "+ yy.y);
+                    System.out.println("Ответ: " + String.valueOf(yy.y).replaceAll("\\.0",""));
                     break;
                 case '*':
                     yy.y = qwe.a * qwer.b;
-                    System.out.println("Ответ: " + yy.y);
+                    System.out.println("Ответ: " + String.valueOf(yy.y).replaceAll("\\.0",""));
                     break;
                 case '/':
                     yy.y = qwe.a / qwer.b;
-                    System.out.println("Ответ: " + yy.y);
+                    System.out.println("Ответ: " + String.valueOf(yy.y).replaceAll("\\.0",""));
                     break;
                 default:
                     System.out.println("Введён некорректный знак!");
@@ -39,7 +38,7 @@ public class Calculate {
     }
 }
 
-class Args {
+class Args{
     double a;
     double b;
     char q;
