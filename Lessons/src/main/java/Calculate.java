@@ -40,7 +40,7 @@ public class Calculate {
 }
 
 class Args {
-    double a;
+    double a ;
     double b;
     char q;
     double y;
