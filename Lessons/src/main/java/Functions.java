@@ -12,11 +12,13 @@ public class Functions {
     public static void hello(String somebody){
         System.out.println("Hello, " + somebody + "!");
     }
+
     public static double area(double i){
         return i * i;
     }
     public static double area(double a, double b){
         return a * b;
     }
+
 
 }
